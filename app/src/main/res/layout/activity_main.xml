@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/colorPrimaryDark"
+	tools:context=".MainActivity">
+
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="32dp"
+		android:layout_marginEnd="32dp"
+		android:layout_marginStart="32dp"
+		android:layout_marginTop="120dp"
+		android:background="@drawable/bg_round_corners_white"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:id="@+id/clStatus"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			app:layout_constraintEnd_toEndOf="@+id/clAdd"
+			app:layout_constraintStart_toStartOf="@+id/clAdd"
+			app:layout_constraintTop_toBottomOf="@+id/clAdd">
+
+			<ImageView
+				android:id="@+id/ivStatus"
+				android:layout_width="72dp"
+				android:layout_height="72dp"
+				android:layout_marginTop="32dp"
+				android:contentDescription="@string/balance_icon"
+				android:tint="@color/colorPrimaryDark"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent"
+				app:srcCompat="@drawable/ic_account_balance_black_24dp" />
+
+			<TextView
+				android:id="@+id/tvStatusLabel"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="24dp"
+				android:layout_marginTop="8dp"
+				android:text="@string/check_loan"
+				android:textAppearance="@style/TextAppearance.Custom"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toEndOf="@+id/ivStatus"
+				app:layout_constraintStart_toStartOf="@+id/ivStatus"
+				app:layout_constraintTop_toBottomOf="@+id/ivStatus" />
+		</androidx.constraintlayout.widget.ConstraintLayout>
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:id="@+id/clAdd"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent">
+
+			<ImageView
+				android:id="@+id/ivAdd"
+				android:layout_width="72dp"
+				android:layout_height="72dp"
+				android:layout_marginTop="32dp"
+				android:contentDescription="@string/new_icon"
+				android:tint="@color/colorPrimaryDark"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent"
+				app:srcCompat="@drawable/ic_add_box_black_24dp" />
+
+			<TextView
+				android:id="@+id/tvAddLabel"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="24dp"
+				android:layout_marginTop="8dp"
+				android:text="@string/request_loan"
+				android:textAppearance="@style/TextAppearance.Custom"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toEndOf="@+id/ivAdd"
+				app:layout_constraintStart_toStartOf="@+id/ivAdd"
+				app:layout_constraintTop_toBottomOf="@+id/ivAdd" />
+		</androidx.constraintlayout.widget.ConstraintLayout>
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:id="@+id/clRepay"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			app:layout_constraintEnd_toEndOf="@+id/clStatus"
+			app:layout_constraintStart_toStartOf="@+id/clStatus"
+			app:layout_constraintTop_toBottomOf="@+id/clStatus">
+
+			<ImageView
+				android:id="@+id/ivPay"
+				android:layout_width="72dp"
+				android:layout_height="72dp"
+				android:layout_marginTop="32dp"
+				android:contentDescription="@string/balance_icon"
+				android:tint="@color/colorPrimaryDark"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent"
+				app:srcCompat="@drawable/ic_payment_black_24dp" />
+
+			<TextView
+				android:id="@+id/tvPayLabel"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="24dp"
+				android:layout_marginTop="8dp"
+				android:text="@string/repay_loan"
+				android:textAppearance="@style/TextAppearance.Custom"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toEndOf="@+id/ivPay"
+				app:layout_constraintStart_toStartOf="@+id/ivPay"
+				app:layout_constraintTop_toBottomOf="@+id/ivPay" />
+		</androidx.constraintlayout.widget.ConstraintLayout>
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+	<ImageView
+		android:id="@+id/ivSettings"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="24dp"
+		android:layout_marginTop="24dp"
+		android:contentDescription="@string/settings_icon"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:srcCompat="@drawable/ic_settings_black_24dp" />
+
+	<ImageView
+		android:id="@+id/ivExit"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="24dp"
+		android:contentDescription="@string/exit_icon"
+		app:layout_constraintEnd_toEndOf="@+id/ivSettings"
+		app:layout_constraintStart_toStartOf="@+id/ivSettings"
+		app:layout_constraintTop_toBottomOf="@+id/ivSettings"
+		app:srcCompat="@drawable/ic_exit_to_app_black_24dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

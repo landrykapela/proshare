@@ -1,0 +1,27 @@
+<resources>
+	<string name="app_name">Proshare</string>
+	<string name="request_loan" translatable="true">Request Loan</string>
+	<string name="check_loan" translatable="true">Check Loan Status</string>
+	<string name="balance_icon" translatable="true">balance icon</string>
+	<string name="new_icon" translatable="true">new icon</string>
+	<string name="repay_loan" translatable="true">Repay Loan</string>
+	<string name="settings_icon" translatable="true">settings icon</string>
+	<string name="exit_icon" translatable="true">Exit icon</string>
+	<string name="email_hint" translatable="true">Enter e-mail</string>
+	<string name="password_hint" translatable="true">Enter password</string>
+	<string name="forgot_password" translatable="true">Forgot password?</string>
+	<string name="login_button_text" translatable="true">Login</string>
+	<string name="signup_button_text" translatable="true">Signup</string>
+	<string name="lock_icon" translatable="true">Lock icon</string>
+	<string name="label_id_type" translatable="true">Select ID Type</string>
+	<string name="fname_hint" translatable="true">First Name</string>
+	<string name="mname_hint" translatable="true">Middle Name</string>
+	<string name="lname_hint" translatable="true">Last Name</string>
+	<string name="mobile_hint" translatable="true">Phone Number</string>
+	<string name="id_number_hint" translatable="true">ID Number</string>
+	<string name="got_id" translatable="true">Got an ID?</string>
+	<string name="button_text_next" translatable="true">Next</string>
+	<string name="close_icon" translatable="true">close icon</string>
+	<string name="id_number_label">ID Number</string>
+	<string name="email_label">E-mail</string>
+</resources>
