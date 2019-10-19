@@ -15,13 +15,12 @@
 			android:id="@+id/spIdType"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:layout_marginEnd="32dp"
 			android:layout_marginStart="32dp"
 			android:layout_marginTop="8dp"
-			android:background="@drawable/bg_round_corners_white"
+			android:layout_marginEnd="32dp"
 			app:layout_constraintEnd_toEndOf="@+id/tvIdTypeLabel"
 			app:layout_constraintStart_toStartOf="@+id/tvIdTypeLabel"
-			app:layout_constraintTop_toBottomOf="@+id/tvLabelUpload" />
+			app:layout_constraintTop_toBottomOf="@+id/tvIdTypeLabel" />
 
 		<TextView
 			android:id="@+id/tvIdTypeLabel"
@@ -65,7 +64,7 @@
 			android:layout_width="0dp"
 			android:layout_height="wrap_content"
 			android:layout_marginTop="16dp"
-			android:visibility="gone"
+			android:visibility="visible"
 			app:layout_constraintEnd_toEndOf="@+id/spIdType"
 			app:layout_constraintHorizontal_bias="1.0"
 			app:layout_constraintStart_toStartOf="@+id/spIdType"
@@ -84,19 +83,16 @@
 
 			<EditText
 				android:id="@+id/etIDNumber"
+				style="@style/TextAppearance.Custom"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:layout_marginEnd="16dp"
 				android:layout_marginStart="16dp"
 				android:layout_marginTop="16dp"
+				android:layout_marginEnd="16dp"
 				android:background="@drawable/bg_round_corners_white"
 				android:ems="10"
 				android:importantForAutofill="no"
 				android:inputType="number"
-				android:paddingBottom="@dimen/et_padding_top"
-				android:paddingEnd="@dimen/et_padding_start"
-				android:paddingStart="@dimen/et_padding_start"
-				android:paddingTop="@dimen/et_padding_top"
 				app:layout_constraintEnd_toEndOf="@+id/tvIDNumberLabel"
 				app:layout_constraintStart_toStartOf="@+id/tvIDNumberLabel"
 				app:layout_constraintTop_toBottomOf="@+id/tvIDNumberLabel" />

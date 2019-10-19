@@ -45,7 +45,7 @@
 
 			app:layout_constraintEnd_toEndOf="parent"
 			app:layout_constraintTop_toTopOf="parent"
-			app:srcCompat="@drawable/ic_close_black_24dp"
+			android:src="@drawable/ic_close_black_24dp"
 			android:contentDescription="@string/close_icon" />
 
 		<ImageView
@@ -56,25 +56,26 @@
 			app:layout_constraintEnd_toEndOf="@+id/tvLabelUpload"
 			app:layout_constraintStart_toStartOf="@+id/tvLabelUpload"
 			app:layout_constraintTop_toBottomOf="@+id/tvLabelUpload"
-			app:srcCompat="@drawable/ic_add_a_photo_black_24dp" />
+			android:src="@drawable/ic_add_a_photo_black_24dp"
+			android:contentDescription="TODO" />
 
 		<ImageView
 			android:id="@+id/ivUploadedImage"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_marginBottom="32dp"
-			android:layout_marginEnd="24dp"
+			android:layout_width="match_parent"
+			android:layout_height="200dp"
 			android:layout_marginStart="24dp"
-			android:layout_marginTop="32dp"
+			android:layout_marginTop="8dp"
+			android:layout_marginEnd="24dp"
+			android:layout_marginBottom="32dp"
 			android:scaleType="centerCrop"
-			android:visibility="gone"
+			android:src="@drawable/ic_launcher_background"
+			android:visibility="visible"
 			app:layout_constraintBottom_toBottomOf="parent"
 			app:layout_constraintEnd_toEndOf="parent"
 			app:layout_constraintHorizontal_bias="0.498"
 			app:layout_constraintStart_toStartOf="parent"
 			app:layout_constraintTop_toBottomOf="@+id/ivAddImageID"
-			app:layout_constraintVertical_bias="0.120000005"
-			app:srcCompat="@drawable/ic_launcher_background" />
+			app:layout_constraintVertical_bias="0.120000005" />
 
 		<Button
 			android:id="@+id/btnNext"

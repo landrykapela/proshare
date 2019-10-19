@@ -5,4 +5,6 @@
 	<color name="colorPrimaryLight">#CAA6FF</color>
 	<color name="colorAccent">#E8D85A</color>
 	<color name="colorAccentLight">#FCFAC5</color>
+	<color name="colorHint">#CECECE</color>
+	<color name="colorTextDark">#606060</color>
 </resources>

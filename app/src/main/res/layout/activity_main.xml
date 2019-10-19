@@ -40,7 +40,7 @@
 				app:layout_constraintEnd_toEndOf="parent"
 				app:layout_constraintStart_toStartOf="parent"
 				app:layout_constraintTop_toTopOf="parent"
-				app:srcCompat="@drawable/ic_account_balance_black_24dp" />
+				android:src="@drawable/ic_account_balance_black_24dp" />
 
 			<TextView
 				android:id="@+id/tvStatusLabel"
@@ -74,7 +74,7 @@
 				app:layout_constraintEnd_toEndOf="parent"
 				app:layout_constraintStart_toStartOf="parent"
 				app:layout_constraintTop_toTopOf="parent"
-				app:srcCompat="@drawable/ic_add_box_black_24dp" />
+				android:src="@drawable/ic_add_box_black_24dp" />
 
 			<TextView
 				android:id="@+id/tvAddLabel"
@@ -108,7 +108,7 @@
 				app:layout_constraintEnd_toEndOf="parent"
 				app:layout_constraintStart_toStartOf="parent"
 				app:layout_constraintTop_toTopOf="parent"
-				app:srcCompat="@drawable/ic_payment_black_24dp" />
+				android:src="@drawable/ic_payment_black_24dp" />
 
 			<TextView
 				android:id="@+id/tvPayLabel"
@@ -134,7 +134,7 @@
 		android:contentDescription="@string/settings_icon"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
-		app:srcCompat="@drawable/ic_settings_black_24dp" />
+		android:src="@drawable/ic_settings_black_24dp" />
 
 	<ImageView
 		android:id="@+id/ivExit"
@@ -145,5 +145,5 @@
 		app:layout_constraintEnd_toEndOf="@+id/ivSettings"
 		app:layout_constraintStart_toStartOf="@+id/ivSettings"
 		app:layout_constraintTop_toBottomOf="@+id/ivSettings"
-		app:srcCompat="@drawable/ic_exit_to_app_black_24dp" />
+		android:src="@drawable/ic_exit_to_app_black_24dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

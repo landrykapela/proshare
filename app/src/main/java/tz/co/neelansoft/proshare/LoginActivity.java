@@ -1,5 +1,6 @@
 package tz.co.neelansoft.proshare;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -11,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 /**
  * Created by Landry Kapela on 2019-10-16.
  */
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends Activity {
 	
 	Button btnLogin;
 	TextView tvSignup;
@@ -29,7 +30,7 @@ public class LoginActivity extends AppCompatActivity {
 		btnLogin.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
-				startActivity(new Intent(LoginActivity.this, MainActivity.class));
+				startActivity(new Intent(LoginActivity.this, MainActivity.class).putExtra("first_run",false));
 				finish();
 			}
 		});

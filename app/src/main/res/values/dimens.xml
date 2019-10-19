@@ -3,4 +3,6 @@
 	<dimen name="border_radius">30dp</dimen>
 	<dimen name="et_padding_start">16dp</dimen>
 	<dimen name="et_padding_top">8dp</dimen>
+	<dimen name="button_padding_start">16dp</dimen>
+	<dimen name="button_padding_top">8dp</dimen>
 </resources>
