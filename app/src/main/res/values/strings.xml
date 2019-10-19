@@ -24,4 +24,16 @@
 	<string name="close_icon" translatable="true">close icon</string>
 	<string name="id_number_label">ID Number</string>
 	<string name="email_label">E-mail</string>
+	<string name="button_text_back">Back</string>
+	<string name="address_label">Address</string>
+	<string name="address_hint">Enter address</string>
+	<string name="label_upload_id">Upload a picture of your ID</string>
+	<string name="secure_your_account">Secure your account</string>
+	<string name="button_text_finish">Finish</string>
+
+	<string-array name="idtypes">
+		<item>National ID</item>
+		<item>Driving License</item>
+		<item>Voter ID</item>
+	</string-array>
 </resources>
