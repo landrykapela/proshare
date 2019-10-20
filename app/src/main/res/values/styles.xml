@@ -3,9 +3,9 @@
 	<!-- Base application theme. -->
 	<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
 		<!-- Customize your theme here. -->
-		<item name="colorPrimary">@color/colorPrimary</item>
-		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-		<item name="colorAccent">@color/colorAccent</item>
+		<item name="colorPrimary">#ffc738</item>
+		<item name="colorPrimaryDark">#c89700</item>
+		<item name="colorAccent">#000000</item>
 		<item name="android:textAppearance">@style/TextAppearance.Custom</item>
 <!--		<item name="preferenceTheme">@style/PreferenceThemeOverlay</item>-->
 	</style>
@@ -13,31 +13,41 @@
 		<item name="android:colorPrimary">@color/colorPrimary</item>
 		<item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
 		<item name="android:colorAccent">@color/colorAccent</item>
-		<item name="android:textAppearance">@style/TextAppearance.Custom</item>
+		<item name="android:editTextStyle">@style/TextAppearance.Custom</item>
 		<item name="android:textColorHint">@color/colorHint</item>
 		<item name="android:buttonStyle">@style/ButtonAppearance</item>
+		<item name="android:textViewStyle">@style/LabelStyle.Dark</item>
 	</style>
-	<style name="TextAppearance.Custom" parent="android:TextAppearance">
+	<style name="TextAppearance.Custom" parent="@android:style/Widget.EditText">
 		<item name="android:fontFamily">@font/raleway_light</item>
-		<item name="android:textColor">@color/colorPrimaryDark</item>
+		<item name="android:textColor">@android:color/white</item>
 		<item name="android:paddingEnd">@dimen/et_padding_start</item>
 		<item name="android:paddingStart">@dimen/et_padding_start</item>
 		<item name="android:paddingTop">@dimen/et_padding_top</item>
 		<item name="android:paddingBottom">@dimen/et_padding_top</item>
+		<item name="android:background">@drawable/bg_round_corners_outline_white</item>
+		<item name="android:gravity">center</item>
 	</style>
 	<style name="ButtonAppearance" parent="Widget.AppCompat.Button">
-		<item name="android:textAppearanceButton">@style/TextAppearance.Custom</item>
+		<item name="android:fontFamily">@font/montserrat</item>
+		<item name="android:background">@drawable/bg_round_corners_white</item>
 		<item name="android:textColor">@color/colorPrimaryDark</item>
 		<item name="android:paddingEnd">@dimen/button_padding_start</item>
 		<item name="android:paddingStart">@dimen/button_padding_start</item>
 		<item name="android:paddingTop">@dimen/button_padding_top</item>
 		<item name="android:paddingBottom">@dimen/button_padding_top</item>
 	</style>
-<style name="LabelStyle" parent="TextAppearance.AppCompat.Small">
-	<item name="android:textColor">@color/colorTextDark</item>
+<style name="LabelStyle.Light" parent="@android:style/Widget.TextView">
+	<item name="android:textColor">@color/colorPrimaryDark</item>
 	<item name="android:fontFamily">@font/raleway_light</item>
-
+	<item name="android:textSize">@dimen/label_text_size</item>
 </style>
+	<style name="LabelStyle.Dark" parent="@android:style/Widget.TextView">
+		<item name="android:textColor">@android:color/white</item>
+		<item name="android:fontFamily">@font/raleway_light</item>
+		<item name="android:textSize">@dimen/label_text_size</item>
+	</style>
 
 
+	<dimen name="label_text_size">14sp</dimen>
 </resources>

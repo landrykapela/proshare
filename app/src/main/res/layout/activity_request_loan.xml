@@ -15,6 +15,7 @@
         android:text="@string/loan_application"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@android:color/white"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -71,11 +72,9 @@
 
     <EditText
         android:id="@+id/etLoanAmount"
-        style="@style/TextAppearance.Custom"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:background="@drawable/bg_round_corners_white"
         android:ems="10"
         android:hint="@string/loan_amount_hint"
         android:inputType="numberDecimal"
@@ -99,9 +98,20 @@
     <Spinner
         android:id="@+id/spLoanPeriod"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="@+id/etLoanAmount"
         app:layout_constraintStart_toStartOf="@+id/etLoanAmount"
         app:layout_constraintTop_toBottomOf="@+id/tvLabelRepaymentPeriod" />
+
+    <Button
+        android:id="@+id/btnSummary"
+        style="@style/ButtonAppearance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/view_summary"
+        app:layout_constraintEnd_toEndOf="@+id/etLoanAmount"
+        app:layout_constraintStart_toStartOf="@+id/etLoanAmount"
+        app:layout_constraintTop_toBottomOf="@+id/spLoanPeriod" />
 </androidx.constraintlayout.widget.ConstraintLayout>

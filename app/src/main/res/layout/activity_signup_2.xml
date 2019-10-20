@@ -14,7 +14,7 @@
 			android:id="@+id/clNavigation"
 			android:layout_width="0dp"
 			android:layout_height="wrap_content"
-			android:layout_marginTop="16dp"
+			android:layout_marginTop="8dp"
 			android:visibility="visible"
 			app:layout_constraintEnd_toEndOf="@+id/clDetails"
 			app:layout_constraintHorizontal_bias="1.0"
@@ -25,10 +25,9 @@
 				android:id="@+id/btnNext"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:layout_marginBottom="16dp"
 				android:layout_marginTop="16dp"
-				android:background="@drawable/bg_round_corners_white"
-				android:fontFamily="@font/montserrat"
+				android:layout_marginEnd="24dp"
+				android:layout_marginBottom="16dp"
 				android:text="@string/button_text_next"
 				app:layout_constraintBottom_toBottomOf="parent"
 				app:layout_constraintEnd_toEndOf="parent"
@@ -38,8 +37,7 @@
 				android:id="@+id/btnBack"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:background="@drawable/bg_round_corners_white"
-				android:fontFamily="@font/montserrat"
+				android:layout_marginStart="24dp"
 				android:text="@string/button_text_back"
 				app:layout_constraintBottom_toBottomOf="@+id/btnNext"
 				app:layout_constraintEnd_toStartOf="@+id/btnNext"
@@ -57,7 +55,6 @@
 			android:layout_marginEnd="24dp"
 			android:layout_marginStart="24dp"
 			android:layout_marginTop="32dp"
-			android:background="@drawable/bg_round_corners_white"
 			android:visibility="visible"
 			app:layout_constraintBottom_toBottomOf="parent"
 			app:layout_constraintEnd_toEndOf="parent"
@@ -69,6 +66,7 @@
 				style="@style/TextAppearance.Custom"
 				android:layout_width="0dp"
 				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
 				android:autofillHints=""
 				android:ems="10"
 				android:hint="@string/fname_hint"
@@ -79,12 +77,13 @@
 
 			<EditText
 				android:id="@+id/etMName"
+				style="@style/TextAppearance.Custom"
 				android:layout_width="0dp"
 				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:autofillHints=""
 				android:ems="10"
 				android:hint="@string/mname_hint"
-				android:autofillHints=""
-				style="@style/TextAppearance.Custom"
 				android:inputType="textPersonName"
 				app:layout_constraintEnd_toEndOf="@+id/etFName"
 				app:layout_constraintStart_toStartOf="@+id/etFName"
@@ -92,37 +91,42 @@
 
 			<EditText
 				android:id="@+id/etLName"
+				style="@style/TextAppearance.Custom"
 				android:layout_width="0dp"
 				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:autofillHints=""
 				android:ems="10"
 				android:hint="@string/lname_hint"
-				android:autofillHints=""
-				style="@style/TextAppearance.Custom"
 				android:inputType="textPersonName"
 				app:layout_constraintEnd_toEndOf="@+id/etMName"
 				app:layout_constraintStart_toStartOf="@+id/etMName"
 				app:layout_constraintTop_toBottomOf="@+id/tvLabelLName" />
+
 			<EditText
 				android:id="@+id/etDob"
+				style="@style/TextAppearance.Custom"
 				android:layout_width="0dp"
 				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:autofillHints=""
 				android:ems="10"
 				android:hint="@string/dob_hint"
-				android:autofillHints=""
-				style="@style/TextAppearance.Custom"
 				android:inputType="text|date"
 				app:layout_constraintEnd_toEndOf="@+id/etLName"
 				app:layout_constraintHorizontal_bias="0.0"
 				app:layout_constraintStart_toStartOf="@+id/etLName"
 				app:layout_constraintTop_toBottomOf="@+id/tvLabelDob" />
+
 			<EditText
 				android:id="@+id/etEmail"
+				style="@style/TextAppearance.Custom"
 				android:layout_width="0dp"
 				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:autofillHints=""
 				android:ems="10"
 				android:hint="@string/email_hint"
-				android:autofillHints=""
-				style="@style/TextAppearance.Custom"
 				android:inputType="textEmailAddress"
 				app:layout_constraintEnd_toEndOf="@+id/etDob"
 				app:layout_constraintHorizontal_bias="0.0"
@@ -131,13 +135,14 @@
 
 			<EditText
 				android:id="@+id/etMobile"
+				style="@style/TextAppearance.Custom"
 				android:layout_width="0dp"
 				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:autofillHints=""
 				android:ems="10"
 				android:hint="@string/mobile_hint"
 				android:inputType="phone"
-				android:autofillHints=""
-				style="@style/TextAppearance.Custom"
 				app:layout_constraintEnd_toEndOf="@+id/etEmail"
 				app:layout_constraintStart_toStartOf="@+id/etEmail"
 				app:layout_constraintTop_toBottomOf="@+id/tvLabelPhone" />
@@ -148,6 +153,7 @@
 				android:layout_width="0dp"
 				android:layout_height="wrap_content"
 				android:layout_marginStart="24dp"
+				android:layout_marginTop="8dp"
 				android:layout_marginEnd="24dp"
 				android:autofillHints=""
 				android:ems="10"
@@ -159,15 +165,16 @@
 
 			<EditText
 				android:id="@+id/etAddress"
+				style="@style/TextAppearance.Custom"
 				android:layout_width="0dp"
 				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
 				android:layout_marginBottom="32dp"
-				android:ems="10"
 				android:autofillHints=""
+				android:ems="10"
 				android:gravity="start|top"
-				android:inputType="textMultiLine"
 				android:hint="@string/address_hint"
-				style="@style/TextAppearance.Custom"
+				android:inputType="textMultiLine"
 				app:layout_constraintBottom_toBottomOf="parent"
 				app:layout_constraintEnd_toEndOf="@+id/etMobile"
 				app:layout_constraintStart_toStartOf="@+id/etMobile"
@@ -181,7 +188,6 @@
 				android:layout_marginTop="16dp"
 				android:fontFamily="@font/raleway_light"
 				android:text="@string/id_number_label"
-				style="@style/LabelStyle"
 				app:layout_constraintStart_toStartOf="parent"
 				app:layout_constraintTop_toTopOf="parent" />
 
@@ -191,7 +197,6 @@
 				android:layout_height="wrap_content"
 				android:layout_marginTop="16dp"
 				android:text="@string/mname_hint"
-				style="@style/LabelStyle"
 				app:layout_constraintStart_toStartOf="@+id/tvLabelFName"
 				app:layout_constraintTop_toBottomOf="@+id/etFName" />
 
@@ -201,7 +206,6 @@
 				android:layout_height="wrap_content"
 				android:layout_marginTop="16dp"
 				android:text="@string/lname_hint"
-				style="@style/LabelStyle"
 				app:layout_constraintStart_toStartOf="@+id/tvLabelFName"
 				app:layout_constraintTop_toBottomOf="@+id/etMName" />
 			<TextView
@@ -210,7 +214,6 @@
 				android:layout_height="wrap_content"
 				android:layout_marginTop="16dp"
 				android:text="@string/dob_label"
-				style="@style/LabelStyle"
 				app:layout_constraintStart_toStartOf="@+id/tvLabelLName"
 				app:layout_constraintTop_toBottomOf="@+id/etLName" />
 			<TextView
@@ -219,7 +222,6 @@
 				android:layout_height="wrap_content"
 				android:layout_marginTop="16dp"
 				android:text="@string/email_label"
-				style="@style/LabelStyle"
 				app:layout_constraintStart_toStartOf="@+id/tvLabelDob"
 				app:layout_constraintTop_toBottomOf="@+id/etDob" />
 
@@ -229,7 +231,6 @@
 				android:layout_height="wrap_content"
 				android:layout_marginTop="16dp"
 				android:text="@string/fname_hint"
-				style="@style/LabelStyle"
 				app:layout_constraintStart_toStartOf="@+id/tvLabelIDNumber"
 				app:layout_constraintTop_toBottomOf="@+id/etIdNumber" />
 
@@ -239,7 +240,6 @@
 				android:layout_height="wrap_content"
 				android:layout_marginTop="16dp"
 				android:text="@string/mobile_hint"
-				style="@style/LabelStyle"
 				app:layout_constraintStart_toStartOf="@+id/tvLabelEmail"
 				app:layout_constraintTop_toBottomOf="@+id/etEmail" />
 
@@ -249,7 +249,6 @@
 				android:layout_height="wrap_content"
 				android:layout_marginTop="16dp"
 				android:text="@string/address_label"
-				style="@style/LabelStyle"
 				app:layout_constraintStart_toStartOf="@+id/tvLabelPhone"
 				app:layout_constraintTop_toBottomOf="@+id/etMobile" />
 
