@@ -97,6 +97,7 @@ public class UploadIdActivity extends Activity {
             case RC_CAMERA:
                 if(grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
                     Toast.makeText(UploadIdActivity.this, "Permission granted",Toast.LENGTH_LONG).show();
+                    captureImage();
                 }
                 break;
         }

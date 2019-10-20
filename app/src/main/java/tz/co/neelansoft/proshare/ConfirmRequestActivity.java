@@ -7,6 +7,7 @@ import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -21,6 +22,7 @@ public class ConfirmRequestActivity extends Activity {
     private TextView tvLoanType;
     private TextView tvTotalAmount;
     private Button btnConfirm;
+    private ImageView ivClose;
     private ProgressBar progressBar;
     private Bundle loan = new Bundle();
     @Override
@@ -36,6 +38,14 @@ public class ConfirmRequestActivity extends Activity {
         tvTotalAmount = findViewById(R.id.tvTotalAmount);
         btnConfirm = findViewById(R.id.btnConfirm);
         progressBar = findViewById(R.id.progressBar);
+        ivClose = findViewById(R.id.ivClose);
+
+        ivClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
         btnConfirm.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,12 +68,12 @@ public class ConfirmRequestActivity extends Activity {
             double loan_amount = Double.parseDouble(Objects.requireNonNull(loan.getString("loan_amount")));
             String loanType = types[loan.getInt("type")];
 
-            String monthlyInstallment = String.valueOf((loan_amount + interest)/installments);
-            tvLoanAmount.setText(String.valueOf(loan_amount));
+            String monthlyInstallment = String.format("%.2f",(loan_amount + interest)/installments);
+            tvLoanAmount.setText(String.format("%.2f",loan_amount));
             tvInstallment.setText(monthlyInstallment);
-            tvInterestAmount.setText(String.valueOf(interest));
+            tvInterestAmount.setText(String.format("%.2f",interest));
             tvLoanType.setText(loanType);
-            tvTotalAmount.setText(String.valueOf(loan_amount + interest));
+            tvTotalAmount.setText(String.format("%.2f",(loan_amount + interest)));
         }
 
     }
@@ -73,9 +83,8 @@ public class ConfirmRequestActivity extends Activity {
             @Override
             public void run() {
                 Toast.makeText(ConfirmRequestActivity.this,"Application Sent",Toast.LENGTH_LONG).show();
-                Intent i = new Intent(ConfirmRequestActivity.this,MainActivity.class);
+                Intent i = new Intent(ConfirmRequestActivity.this,UploadProofActivity.class);
                 i.putExtra("loan",loan);
-                i.putExtra("first_run",false);
                 startActivity(i);
                 finish();
             }

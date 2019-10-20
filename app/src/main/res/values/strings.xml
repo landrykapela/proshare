@@ -56,8 +56,12 @@
     <string name="confirm_exit_title">Confirm Exit</string>
 	<string name="cancel">Cancel</string>
     <string name="exit">Exit</string>
+    <string name="upload_proof">Upload Proof Documents</string>
+    <string name="upload_proof_document">Upload proof document</string>
+    <string name="send">Send</string>
+	<string name="upload">Upload</string>
 
-    <string-array name="idtypes">
+	<string-array name="idtypes">
 		<item>National ID</item>
 		<item>Driving License</item>
 		<item>Voter ID</item>
