@@ -65,7 +65,7 @@
 			app:layout_constraintTop_toTopOf="parent">
 
 			<ImageView
-				android:id="@+id/ivAdd"
+				android:id="@+id/ivRequest"
 				android:layout_width="72dp"
 				android:layout_height="72dp"
 				android:layout_marginTop="32dp"
@@ -74,7 +74,7 @@
 				app:layout_constraintEnd_toEndOf="parent"
 				app:layout_constraintStart_toStartOf="parent"
 				app:layout_constraintTop_toTopOf="parent"
-				android:src="@drawable/ic_add_box_black_24dp" />
+				android:src="@drawable/ic_monetization_on_black_24dp" />
 
 			<TextView
 				android:id="@+id/tvAddLabel"
@@ -85,9 +85,9 @@
 				android:text="@string/request_loan"
 				android:textAppearance="@style/TextAppearance.Custom"
 				app:layout_constraintBottom_toBottomOf="parent"
-				app:layout_constraintEnd_toEndOf="@+id/ivAdd"
-				app:layout_constraintStart_toStartOf="@+id/ivAdd"
-				app:layout_constraintTop_toBottomOf="@+id/ivAdd" />
+				app:layout_constraintEnd_toEndOf="@+id/ivRequest"
+				app:layout_constraintStart_toStartOf="@+id/ivRequest"
+				app:layout_constraintTop_toBottomOf="@+id/ivRequest" />
 		</androidx.constraintlayout.widget.ConstraintLayout>
 
 		<androidx.constraintlayout.widget.ConstraintLayout

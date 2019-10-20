@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:id="@+id/tvLabelHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/loan_application"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_close_black_24dp"
+        android:contentDescription="@string/close_icon" />
+
+    <TextView
+        android:id="@+id/tvLabelLoanTypeSelect"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:labelFor="@id/spLoanType"
+        android:text="@string/select_laon_type"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.Custom"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/tvLabelHead"
+        app:layout_constraintStart_toStartOf="@+id/tvLabelHead"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelHead" />
+
+    <Spinner
+        android:id="@+id/spLoanType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelLoanTypeSelect" />
+
+    <TextView
+        android:id="@+id/tvLabelAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/loan_amount_label"
+        android:labelFor="@id/etLoanAmount"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.Custom"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/tvLabelLoanTypeSelect"
+        app:layout_constraintStart_toStartOf="@+id/tvLabelLoanTypeSelect"
+        app:layout_constraintTop_toBottomOf="@+id/spLoanType" />
+
+    <EditText
+        android:id="@+id/etLoanAmount"
+        style="@style/TextAppearance.Custom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_round_corners_white"
+        android:ems="10"
+        android:hint="@string/loan_amount_hint"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/spLoanType"
+        app:layout_constraintStart_toStartOf="@+id/spLoanType"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelAmount"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/tvLabelRepaymentPeriod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/select_loan_period"
+        android:textAppearance="@style/TextAppearance.Custom"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/tvLabelAmount"
+        app:layout_constraintStart_toStartOf="@+id/tvLabelAmount"
+        app:layout_constraintTop_toBottomOf="@+id/etLoanAmount" />
+
+    <Spinner
+        android:id="@+id/spLoanPeriod"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/etLoanAmount"
+        app:layout_constraintStart_toStartOf="@+id/etLoanAmount"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelRepaymentPeriod" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -37,8 +37,14 @@
 	<string name="id_hint">Enter ID Number</string>
     <string name="dob_label">Date of Birth</string>
     <string name="dob_hint">Date of birth</string>
+    <string name="loan_application">Loan Application</string>
+	<string name="select_laon_type">Select Laon Type</string>
+    <string name="todo">TODO</string>
+    <string name="loan_amount_label">Loan Amount</string>
+	<string name="loan_amount_hint">Enter loan amount</string>
+	<string name="select_loan_period">Select Loan Period</string>
 
-    <string-array name="idtypes">
+	<string-array name="idtypes">
 		<item>National ID</item>
 		<item>Driving License</item>
 		<item>Voter ID</item>
