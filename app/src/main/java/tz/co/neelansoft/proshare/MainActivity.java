@@ -40,6 +40,12 @@ public class MainActivity extends Activity {
 		ivSettings = findViewById(R.id.ivSettings);
 		ivSignout = findViewById(R.id.ivExit);
 
+		ivRepay.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				startActivity(new Intent(MainActivity.this,PaymentActivity.class));
+			}
+		});
 		ivSignout.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
@@ -51,6 +57,13 @@ public class MainActivity extends Activity {
 			public void onClick(View view) {
 				startActivity(new Intent(MainActivity.this, RequestLoanActivity.class));
 //				finish();
+			}
+		});
+
+		ivCheck.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				startActivity(new Intent(MainActivity.this,LoanStatusActivity.class));
 			}
 		});
 	}

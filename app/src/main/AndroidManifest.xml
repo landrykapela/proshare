@@ -27,6 +27,8 @@
 		<activity android:name=".RequestLoanActivity" android:theme="@style/AppTheme.Fullscreen"/>
 		<activity android:name=".ConfirmRequestActivity" android:theme="@style/AppTheme.Fullscreen"/>
 		<activity android:name=".UploadProofActivity" android:theme="@style/AppTheme.Fullscreen"/>
+		<activity android:name="LoanStatusActivity" android:theme="@style/AppTheme.Fullscreen"/>
+		<activity android:name=".PaymentActivity" android:theme="@style/AppTheme.Fullscreen" android:launchMode="singleInstance"/>
 	</application>
 
 </manifest>

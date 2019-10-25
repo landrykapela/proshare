@@ -60,6 +60,16 @@
     <string name="upload_proof_document">Upload proof document</string>
     <string name="send">Send</string>
 	<string name="upload">Upload</string>
+    <string name="principal">Principal</string>
+	<string name="sample_principal">2,000,000</string>
+	<string name="Interest">Interest</string>
+	<string name="sample_interest_installment">83,333</string>
+	<string name="fees">Fees</string>
+	<string name="_0_0">0.0</string>
+    <string name="repay_now">Repay Now</string>
+	<string name="installment_1">Installment 1</string>
+    <string name="sample_date">02-11-2019</string>
+	<string name="due_date">Due date</string>
 
 	<string-array name="idtypes">
 		<item>National ID</item>
