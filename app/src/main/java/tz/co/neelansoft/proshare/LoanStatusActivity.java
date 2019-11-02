@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -17,7 +18,7 @@ import java.util.Date;
 import tz.co.neelansoft.proshare.Models.LoanInstallment;
 import tz.co.neelansoft.proshare.Utils.LoanInstallmentRecyclerAdapter;
 
-public class LoanStatusActivity extends Activity implements LoanInstallmentRecyclerAdapter.OnItemClickListener {
+public class LoanStatusActivity extends Activity{
     private RecyclerView recyclerView;
     private TextView tvAmountTotal;
     private TextView tvLoanStatus;
@@ -60,7 +61,7 @@ li1.setLoanDetails(details);
         li1.setLoanDetails(details);
         loanInstallments.add(li3);
 
-        adapter = new LoanInstallmentRecyclerAdapter(this,loanInstallments,this);
+        adapter = new LoanInstallmentRecyclerAdapter(this,loanInstallments);
         LinearLayoutManager llm = new LinearLayoutManager(this);
         llm.setOrientation(RecyclerView.VERTICAL);
         recyclerView.setLayoutManager(llm);
@@ -68,10 +69,11 @@ li1.setLoanDetails(details);
         recyclerView.setAdapter(adapter);
 
     }
-
-    @Override
-    public void onItemClick(String itemId) {
-        startActivity(new Intent(LoanStatusActivity.this,PaymentActivity.class));
-        finish();
-    }
+//
+//    @Override
+//    public void onItemClick(String itemId) {
+//        Toast.makeText(LoanStatusActivity.this, "Clicked item "+itemId,Toast.LENGTH_LONG).show();
+//        startActivity(new Intent(LoanStatusActivity.this,PaymentActivity.class));
+//        finish();
+//    }
 }

@@ -1,6 +1,7 @@
 package tz.co.neelansoft.proshare.Utils;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,7 +16,9 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
+import tz.co.neelansoft.proshare.LoanStatusActivity;
 import tz.co.neelansoft.proshare.Models.LoanInstallment;
+import tz.co.neelansoft.proshare.PaymentActivity;
 import tz.co.neelansoft.proshare.R;
 
 public class LoanInstallmentRecyclerAdapter extends RecyclerView.Adapter<LoanInstallmentRecyclerAdapter.ViewHolder>{
@@ -31,10 +34,10 @@ public class LoanInstallmentRecyclerAdapter extends RecyclerView.Adapter<LoanIns
     public int getItemCount(){
         return loanList.size();
     }
-    public LoanInstallmentRecyclerAdapter(Context context, ArrayList<LoanInstallment> list, OnItemClickListener listener) {
+    public LoanInstallmentRecyclerAdapter(Context context, ArrayList<LoanInstallment> list) {
         this.context = context;
         this.loanList = list;
-        this.listener = listener;
+//        this.listener = listener;
     }
 
     public ArrayList<LoanInstallment> getListItems(){
@@ -58,7 +61,7 @@ public class LoanInstallmentRecyclerAdapter extends RecyclerView.Adapter<LoanIns
 
 
 
-        public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+        public class ViewHolder extends RecyclerView.ViewHolder{
 
             private TextView tvInstallmentName;
             private TextView tvInstallmentPrincipal;
@@ -97,14 +100,16 @@ public class LoanInstallmentRecyclerAdapter extends RecyclerView.Adapter<LoanIns
                     @Override
                     public void onClick(View view) {
                         Toast.makeText(context,"Clicked Repay button", Toast.LENGTH_LONG).show();
+                        context.startActivity(new Intent(context, PaymentActivity.class));
+
                     }
                 });
             }
 
-            @Override
-            public void onClick(View view){
-                LoanInstallment li = getListItems().get(getAdapterPosition());
-                listener.onItemClick(li.getId());
-            }
+//            @Override
+//            public void onClick(View view){
+//                LoanInstallment li = getListItems().get(getAdapterPosition());
+//                listener.onItemClick(li.getId());
+//            }
         }
 }
